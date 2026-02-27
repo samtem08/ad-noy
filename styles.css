@@ -904,13 +904,15 @@ footer {
         display: flex;
         position: fixed;
         right: -100%;
-        top: 50px;
-        height: clamp(60vh, 70vh, 100vh);
+        top: 0px;
+        height: clamp(100vh, 70vh, 100vh);
         width: clamp(60%, 75%, 100%);
-        background: var(--primary);
+        background: #18233d;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: start;
+        margin-top: 50px;
+        padding-left: 50px;
+        align-items: left;
         transition: 0.4s ease-in-out;
         box-shadow: -10px 0 30px rgba(0,0,0,0.2);
     }
