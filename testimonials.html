@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad-Noy Nig Ltd | Testimonials</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-logo">
+            <img src="images/logo.png" alt="Ad-Noy Logo">
+        </a>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="testimonials.html" class="active">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="tel:+2348022237777" class="phone-link">
+                <i data-lucide="phone"></i>
+                <span>+234 802 223 7777</span>
+            </a>
+            <a href="index.html#contact" class="quote-btn">Get a Quote</a>
+        </div>
+        <div class="menu-toggle" id="mobile-toggle">
+            <i data-lucide="menu"></i>
+        </div>
+    </nav>
+
+    <section class="hero" style="min-height:40vh;">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <p class="subtitle">WHAT CLIENTS SAY</p>
+            <h1>Trusted By Clients Across Sectors</h1>
+            <p class="description">Read real client experiences and learn how Ad-Noy delivered quality projects on time and on budget.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="testimonials-page" style="padding: 80px 8%;">
+            <div class="section-header">
+                <h2>Client Testimonials</h2>
+                <p class="lead">We value our clients’ feedback — here are a few recent comments.</p>
+            </div>
+
+            <div class="testimonials-grid" id="testimonials-list">
+                <article class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="quote">"Ad-Noy turned our rough brief into a stunning office space. Their team was responsive and solutions-oriented throughout."</p>
+                    <h4>Olivia Martins</h4>
+                    <span>COO, Greenline Tech</span>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="quote">"From tender to handover, Ad-Noy were professional and transparent — a partner we trust for repeat projects."</p>
+                    <h4>Mark Adeyemi</h4>
+                    <span>Property Developer</span>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="quote">"Excellent craftsmanship and attention to detail. Our home renovation was completed on schedule and looks incredible."</p>
+                    <h4>Rita Johnson</h4>
+                    <span>Homeowner</span>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="quote">"Clear communication, practical ideas, and excellent site management — highly recommended."</p>
+                    <h4>James Rodriguez</h4>
+                    <span>Business Owner</span>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="quote">"Ad-Noy's project management kept our build on time despite supply challenges. Impressed with their resilience and quality."</p>
+                    <h4>Emeka Okafor</h4>
+                    <span>Contracting Partner</span>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="quote">"A dependable team that delivers thoughtful solutions. Our retail fit-out was exceptional."</p>
+                    <h4>Sarah Mitchell</h4>
+                    <span>Retail Owner</span>
+                </article>
+            </div>
+
+            <div class="testimonial-form" style="margin-top: 48px; max-width:920px;">
+                <h3>Share your experience</h3>
+                <p>Submit a short testimonial and help other clients learn about our work.</p>
+                <form id="testimonial-form" style="display:grid; gap:12px; margin-top:12px;">
+                    <div style="display:flex; gap:12px;">
+                        <input type="text" id="t-name" placeholder="Your name" required style="flex:1; padding:10px; border:1px solid #ddd;">
+                        <input type="text" id="t-role" placeholder="Role / Company" style="flex:1; padding:10px; border:1px solid #ddd;">
+                    </div>
+                    <div style="display:flex; gap:12px; align-items:center;">
+                        <label style="margin:0;">Rating:</label>
+                        <select id="t-rating" style="padding:8px; border:1px solid #ddd;">
+                            <option value="5">5 - Excellent</option>
+                            <option value="4">4 - Very Good</option>
+                            <option value="3">3 - Good</option>
+                            <option value="2">2 - Fair</option>
+                            <option value="1">1 - Poor</option>
+                        </select>
+                    </div>
+                    <textarea id="t-message" rows="4" placeholder="Write your testimonial" style="padding:10px; border:1px solid #ddd;" required></textarea>
+                    <div style="display:flex; gap:12px;">
+                        <button type="submit" class="btn btn-gold">Submit Testimonial</button>
+                        <button type="reset" class="btn btn-outline">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <section class="contact-compact" style="padding-bottom:60px;">
+        <div class="contact-compact-inner">
+            <h2>Interested in working with us?</h2>
+            <p>Contact Ad-Noy for project enquiries, consultations, and estimates.</p>
+            <a href="index.html#contact" class="btn btn-gold">Contact Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="Ad-Noy Logo">
+                <p>Setting the standard in modern construction through innovation, integrity, and unparalleled craftsmanship.</p>
+                <div class="social-icons">
+                    <i data-lucide="instagram"></i>
+                    <i data-lucide="linkedin"></i>
+                    <i data-lucide="facebook"></i>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="projects.html">Portfolio</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Sectors</h4>
+                <ul>
+                    <li><a href="#">Commercial</a></li>
+                    <li><a href="#">Residential</a></li>
+                    <li><a href="#">Infrastructure</a></li>
+                    <li><a href="#">Renovation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Headquarters</h4>
+                <ul>
+                    <li style="color:#ccc">No. 20, Off Moremi High Sch. RD.</li>
+                    <li style="color:#ccc">Offa, Kwara</li>
+                    <li style="color:#ccc">contact@ad-noy.com</li>
+                    <li style="color:#ccc">+234 802 223 7777</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2026 Ad-Noy Construction Group. All Rights Reserved.</div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Handle testimonial submissions client-side (adds to DOM)
+        document.getElementById('testimonial-form').addEventListener('submit', function(e){
+            e.preventDefault();
+            const name = document.getElementById('t-name').value.trim() || 'Anonymous';
+            const role = document.getElementById('t-role').value.trim();
+            const rating = parseInt(document.getElementById('t-rating').value, 10) || 5;
+            const message = document.getElementById('t-message').value.trim();
+
+            const stars = Array.from({length: rating}).map(()=>'<i class="fa-solid fa-star"></i>').join('');
+            const starEmpty = Array.from({length: 5-rating}).map(()=>'<i class="fa-regular fa-star"></i>').join('');
+
+            const card = document.createElement('article');
+            card.className = 'testimonial-card';
+            card.innerHTML = `
+                <div class="stars">${stars}${starEmpty}</div>
+                <p class="quote">${message.replace(/</g,'&lt;')}</p>
+                <h4>${name}</h4>
+                <span>${role}</span>
+            `;
+
+            const list = document.getElementById('testimonials-list');
+            list.insertBefore(card, list.firstChild);
+            card.style.opacity = 0;
+            card.style.transform = 'translateY(8px)';
+            requestAnimationFrame(()=>{ card.style.transition = 'opacity 0.45s ease, transform 0.45s ease'; card.style.opacity = 1; card.style.transform = 'translateY(0)'; });
+
+            this.reset();
+            document.getElementById('t-name').focus();
+        });
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>

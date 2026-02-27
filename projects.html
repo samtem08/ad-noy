@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad-Noy Nig Ltd | Projects</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-logo">
+            <img src="images/logo.png" alt="Ad-Noy Logo">
+        </a>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="tel:+2348035315137" class="phone-link">
+                <i data-lucide="phone"></i>
+                <span>+234 803 531 5137</span>
+            </a>
+            <a href="index.html#contact" class="quote-btn">Get a Quote</a>
+        </div>
+        <div class="menu-toggle" id="mobile-toggle">
+            <i data-lucide="menu"></i>
+        </div>
+    </nav>
+
+    <section class="hero projects-hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <p class="subtitle">OUR WORK</p>
+            <h1>Projects That Showcase Our Craft</h1>
+            <p class="description">Explore a curated selection of residential, commercial and infrastructure projects completed by Ad-Noy.</p>
+            <div class="btn-group">
+                <a href="#projects" class="btn btn-gold">View Projects</a>
+                <a href="#contact" class="btn btn-outline">Request Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="projects-section" id="projects">
+            <div class="section-header">
+                <h2>Our Projects</h2>
+                <p class="lead">Filter by sector to find projects like yours.</p>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="renovation">Renovation</button>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card" data-category="commercial">
+                    <img src="images/Eksu_Medical student_hostel ado_ekiti.jpg" alt="Hostel Building">
+                    <div class="project-meta">
+                        <h3>Medical Student Hostel</h3>
+                        <p>Commercial | Ado-Ekiti, NG</p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="residential">
+                    <img src="images/Ijegun res.jpg" alt="Ijegun Estates">
+                    <div class="project-meta">
+                        <h3>Ijegun Residential</h3>
+                        <p>Residential | Lagos, NG</p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="commercial">
+                    <img src="images/hostel Ibadan.jpg" alt="Hostel">
+                    <div class="project-meta">
+                        <h3>Hostel Ibadan</h3>
+                        <p>Commercial | Ibadan, NG</p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="renovation">
+                    <img src="images/Omolayo_building_roof_repair.jpeg" alt="Heritage Remodel">
+                    <div class="project-meta">
+                        <h3>Omolayo Building Roof Repair</h3>
+                        <p>Renovation | EKSU, Ado-Ekiti</p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="residential">
+                    <img src="images/Ikotun agos.jpg" alt="Ikotun Lagos Residence">
+                    <div class="project-meta">
+                        <h3>Ikotun Lagos Residence</h3>
+                        <p>Residential | Lagos, NG</p>
+                    </div>
+                </article>
+
+                
+                <article class="project-card" data-category="residential">
+                    <img src="images/Lekki Phase 1.jpg" alt="Lekki Phase 1">
+                    <div class="project-meta">
+                        <h3>Lekki Phase 1</h3>
+                        <p>Residential | Lagos, NG</p>
+                    </div>
+                </article>
+
+                
+                <article class="project-card" data-category="residential">
+                    <img src="images/Lekki Phase 2.jpg" alt="Residence Villa">
+                    <div class="project-meta">
+                        <h3>Lekki Residence Villa</h3>
+                        <p>Residential | Lagos</p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="renovation">
+                    <img src="images/Maryland Lagos.jpg" alt="Heritage Remodel">
+                    <div class="project-meta">
+                        <h3>Maryland</h3>
+                        <p>Renovation | Lagos, NG</p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="commercial">
+                    <img src="images/oke-ila_Police_station.jpeg" alt="Police Station">
+                    <div class="project-meta">
+                        <h3>Oke-Ila Police Station</h3>
+                        <p>Commercial | Ado-Ekiti, NG</p>
+                    </div>
+                </article>
+
+
+
+            </div>
+        </section>
+
+        <section class="project-details" id="project-detail" hidden>
+            <button id="back-to-list" class="btn btn-outline">Back to Projects</button>
+            <div id="detail-content"></div>
+        </section>
+    </main>
+
+    <section class="contact-compact" id="contact">
+        <div class="contact-compact-inner">
+            <h2>Ready to discuss your project?</h2>
+            <p>Contact our team for a free consultation and estimate.</p>
+            <a href="index.html#contact" class="btn btn-gold">Contact Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="Ad-Noy Logo">
+                <p>Setting the standard in modern construction through innovation, integrity, and unparalleled craftsmanship.</p>
+                <div class="social-icons">
+                    <i data-lucide="instagram"></i>
+                    <i data-lucide="linkedin"></i>
+                    <i data-lucide="facebook"></i>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="projects.html">Portfolio</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Sectors</h4>
+                <ul>
+                    <li><a href="#">Commercial</a></li>
+                    <li><a href="#">Residential</a></li>
+                    <li><a href="#">Infrastructure</a></li>
+                    <li><a href="#">Renovation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Headquarters</h4>
+                <ul>
+                    <li style="color:#ccc">No. 20, Off Moremi High Sch. RD.</li>
+                    <li style="color:#ccc">Offa, Kwara</li>
+                    <li style="color:#ccc">contact@ad-noy.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2026 Ad-Noy Construction Group. All Rights Reserved.</div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Simple project filter
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.getAttribute('data-filter');
+                document.querySelectorAll('.project-card').forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Click project to show detail (simple inline content)
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const title = card.querySelector('h3').innerText;
+                const meta = card.querySelector('p').innerText;
+                const img = card.querySelector('img').src;
+                document.getElementById('detail-content').innerHTML = `
+                    <div class="detail-grid">
+                        <div class="detail-image"><img src="${img}" alt="${title}"></div>
+                        <div class="detail-info">
+                            <h2>${title}</h2>
+                            <p class="muted">${meta}</p>
+                            <p>Project overview: high-quality construction, delivered on schedule with full project management, procurement and finishings handled by Ad-Noy's expert team.</p>
+                            <ul class="project-specs">
+                                <li><strong>Client:</strong> Confidential</li>
+                                <li><strong>Completion:</strong> 2025</li>
+                                <li><strong>Value:</strong> Confidential</li>
+                            </ul>
+                            <a href="index.html#contact" class="btn btn-gold">Request Consultation</a>
+                        </div>
+                    </div>
+                `;
+                document.getElementById('projects').hidden = true;
+                document.getElementById('project-detail').hidden = false;
+                window.scrollTo({top:0, behavior:'smooth'});
+            });
+        });
+
+        document.getElementById('back-to-list').addEventListener('click', () => {
+            document.getElementById('project-detail').hidden = true;
+            document.getElementById('projects').hidden = false;
+            window.scrollTo({top: document.getElementById('projects').offsetTop - 80, behavior:'smooth'});
+        });
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>
