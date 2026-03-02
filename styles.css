@@ -160,6 +160,53 @@
         }
 
         /* --- Hero Section --- */
+        .marquee-wrapper {
+            width: 100%;
+            overflow: hidden;           /* hides content that slides out */
+                       /* change to your hero background */
+            color: #fff;
+            padding: 1rem;
+            margin: 0 1rem;
+            border-top: 1px solid rgba(255,255,255,0.15);
+            border-bottom: 1px solid rgba(255,255,255,0.15);
+            position: relative;        /* establish stacking context */
+            /*z-index: 1;                /* sit above the hero overlay (z-index:1) */
+        }
+
+        .marquee-content {
+            display: inline-flex;
+            align-items: center;             /* vertically center logo and text */
+            white-space: nowrap;
+            animation: scroll 5s linear infinite;
+        }
+
+        .logo {
+            height: 58px;               /* adjust to your logo size */
+            width: auto;
+            vertical-align: middle;
+        }
+
+        /* center content inside the scrolling track */
+        .marquee-track {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -20px;         /* shift upward */
+        }
+
+        .inline-logo {
+        height: 1.4em;
+        margin: 0 0.8rem;
+        vertical-align: middle;
+        filter: brightness(1.8); /* brighten logo image */
+        }
+
+        @keyframes scroll {
+        0%   { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+        }
+
+
         .hero {
             height: 100vh;
             min-height: 60vh;
@@ -295,9 +342,6 @@
 
         /* --- Responsive --- */
         @media (max-width: 768px) {
-            nav {
-                padding: 10px clamp(10px, 2vw, 16px);
-            }
             .btn-group { flex-direction: column; 
                 width: 100%; align-items: center;}
             .btn { width: 100%; max-width: 280px; }
@@ -308,9 +352,6 @@
         }
         
         @media (max-width: 640px) {
-            nav {
-                padding: 10px 12px;
-            }
             .nav-logo img {
                 width: 45px;
                 height: 45px;
@@ -323,10 +364,6 @@
         }
         
         @media (max-width: 480px) {
-            nav {
-                gap: 8px;
-                padding: 8px 10px;
-            }
             .nav-logo img {
                 width: 40px;
                 height: 40px;
@@ -871,10 +908,23 @@ footer {
 
 /* --- Mobile Menu Styles --- */
 .menu-toggle {
+    /* keep in DOM, visible on small devices via media query below */
     display: none;
     cursor: pointer;
     z-index: 1001;
     color: var(--white);
+}
+
+/* make the icon itself easier to see and provide fallback */
+.menu-toggle i {
+    font-size: 1.5rem;
+    display: inline-block;
+    color: var(--white);
+}
+
+/* unicode fallback if lucide doesn't inject SVG */
+.menu-toggle i[data-lucide="menu"]::before {
+    content: "\2630"; /* ☰ */
 }
 
 @media (max-width: 768px) {
@@ -898,6 +948,9 @@ footer {
     .menu-toggle {
         display: block;
         margin-left: auto;
+        /* ensure it floats above other nav content */
+        position: relative;
+        z-index: 1001;
     }
 
     .nav-links {
@@ -909,12 +962,12 @@ footer {
         width: clamp(60%, 75%, 100%);
         background: #18233d;
         flex-direction: column;
-        justify-content: start;
-        margin-top: 50px;
+        justify-content: left;
         padding-left: 50px;
         align-items: left;
         transition: 0.4s ease-in-out;
         box-shadow: -10px 0 30px rgba(0,0,0,0.2);
+        margin-top: 60px;
     }
 
     .nav-links.active {
@@ -924,6 +977,7 @@ footer {
     .nav-links a {
         color: var(--white);
         font-size: clamp(1rem, 4vw, 1.2rem);
+        margin-top: 20px;
     }
 
     .why-choose,
